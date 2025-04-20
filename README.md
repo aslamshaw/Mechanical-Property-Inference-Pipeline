@@ -37,8 +37,8 @@ The main objectives of this thesis are:
 
 1. **Detect and eliminate outliers** in small test datasets using robust methods
 2. **Augment data** using Conditional Tabular GANs (CTGAN) to simulate realistic synthetic material tests
-3. **Train regression models** (e.g., neural networks or other simple regressors) to predict characteristic values
-4. **Evaluate the impact of outlier filtering and synthetic data on model accuracy**
+3. **Evaluate the impact of outlier filtering and synthetic data on model accuracy**
+4. **Train regression models** (e.g., neural networks or other simple regressors) to predict characteristic values
 
 ---
 
@@ -49,8 +49,6 @@ The main objectives of this thesis are:
 Outlier detection formed the **cornerstone of the preprocessing pipeline** in this thesis. Given the small size of experimental configurations and the high sensitivity of machine learning models to data irregularities, multiple complementary strategies were implemented to identify and remove outliers in a robust and justifiable way.
 
 The following methods were used in combination to detect outliers:
-
----
 
 #### 1.1 Interquartile Range (IQR) Method
 
