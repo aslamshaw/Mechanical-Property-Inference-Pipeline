@@ -180,6 +180,11 @@ In cases where the data is limited (i.e., fewer than 10-20 test samples), the mo
 - **Conditional columns**: Not used in this case since all features were continuous
 - **Output**: Synthetic dataset of the same dimensionality and similar distribution
 
+#### Propensity Score Comparison: Real vs Synthetic Data
+The authenticity of synthetic data was tested using a **propensity score classifier**. The results of the test comparing real and synthetic data are shown below:
+
+<img src="images/prob-dist-real-syth-propensity-comparison.PNG" width="500" height="auto" />
+
 ---
 
 #### 📊 Evaluation Using Propensity Score Matching
@@ -263,6 +268,12 @@ To determine whether an extreme tensile strength value (e.g., the lowest in a se
 
 This Winsorizing method provides a **statistically grounded, data-driven mechanism** for handling extreme values in material property datasets. It ensures that the characteristic value estimation remains **robust, unbiased, and representative**, especially when working with limited sample sizes common in physical testing scenarios.
 
+#### Probability Distribution Before Winsorizing
+<img src="images/prob-dist-before-winsorizing.PNG" width="500" height="auto" />
+
+#### Probability Distribution After Winsorizing
+<img src="images/prob-dist-after-winsorizing.PNG" width="500" height="auto" />
+
 ---
 
 ### 4. Characteristic Value Prediction
@@ -278,6 +289,21 @@ The final component involves using the augmented dataset to train a **regression
 - **Normalized input features**
 - **K-fold cross-validation** to assess generalization
 - **MAPE and RMSE** used as evaluation metrics
+
+#### Target Prediction and Characteristic Value Accuracy (MAPE)
+Here’s how the model's accuracy, measured by **MAPE** (Mean Absolute Percentage Error), evolves over iterations.
+
+<img src="images/target_prediction_char_value_mape.PNG" width="500" height="auto" />
+
+#### Best Fit for Characteristic Value Prediction
+The fit of the predicted characteristic values against different sample sizes is shown below:
+
+<img src="images/char_value_from_sample_size_best_fit.PNG" width="500" height="auto" />
+
+#### Loss Function Convergence
+Below is the plot showing the convergence of the loss function during the model's training process.
+
+<img src="images/loss_function.PNG" width="500" height="auto" />
 
 ---
 
