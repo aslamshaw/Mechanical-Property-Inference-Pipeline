@@ -1,6 +1,10 @@
 # Machine Learning for Determining Characteristic Values Based on Material-Specific Tests
 
-This repository contains the complete documentation and implementation of my **Master’s Thesis** work at **TU Dresden**, as part of the Master's program in *Advanced Computational and Civil Engineering Structural Studies*. The core focus is on applying **machine learning methods** to predict **characteristic material values** (such as the 5th percentile of tensile strength) from **material-specific experimental tests**, with an emphasis on **robust outlier detection** and **data augmentation** using synthetic data.
+This repository contains the complete documentation and implementation of my Master’s Thesis work at **TU Dresden**, conducted as part of the Master's program in *Advanced Computational and Civil Engineering Structural Studies (ACCESS)*.
+
+The thesis was carried out in collaboration with **CARBOCON GmbH**, where I worked as a **Research Assistant (Data Analyst)**. The core focus is on applying **machine learning methods** to predict **characteristic material values** (such as the 5th percentile of tensile strength) from **material-specific experimental tests**, with an emphasis on **robust outlier detection** and **data augmentation** using synthetic data.
+
+This work bridges experimental material science and computational data-driven modeling to improve the accuracy and trustworthiness of structural material evaluation.
 
 ---
 
